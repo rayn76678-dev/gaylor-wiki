@@ -1,78 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <title>Gaylor Wiki</title>
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial;
+    display: flex;
     background: #0f172a;
     color: #e2e8f0;
 }
 
-header {
-    background: #1e293b;
-    padding: 30px;
-    text-align: center;
+/* 左侧栏 */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #111827;
+    padding: 20px;
+    position: fixed;
 }
 
-h1 {
-    margin: 0;
-    font-size: 40px;
+.sidebar h2 {
+    color: #60a5fa;
 }
 
-.container {
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #1f2937;
+}
+
+/* 主内容 */
+.main {
+    margin-left: 280px;
     padding: 40px;
-    max-width: 900px;
-    margin: auto;
+    width: 100%;
 }
 
 .card {
     background: #1e293b;
     padding: 20px;
-    margin: 15px 0;
+    margin-bottom: 20px;
     border-radius: 12px;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: scale(1.02);
-    background: #273449;
-}
-
-a {
-    color: #60a5fa;
-    text-decoration: none;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>📚 Gaylor Wiki</h1>
-    <p>一个简洁但高级的知识库</p>
-</header>
-
-<div class="container">
-
-<div class="card">
-    <h2>📖 学习笔记</h2>
-    <p>记录所有学习内容</p>
+<div class="sidebar">
+    <h2>📚 Wiki</h2>
+    <a href="#">🏠 Home</a>
+    <a href="study.html">📖 学习笔记</a>
+    <a href="code.html">💻 编程</a>
+    <a href="thoughts.html">🧠 思考</a>
+    <a href="about.html">👤 关于我</a>
 </div>
 
-<div class="card">
-    <h2>💻 项目</h2>
-    <p>我的代码和实验</p>
-</div>
+<div class="main">
+    <h1>欢迎来到 Gaylor Wiki</h1>
 
-<div class="card">
-    <h2>🧠 思考</h2>
-    <p>一些想法和总结</p>
-</div>
+    <div class="card">
+        <h3>📌 最近更新</h3>
+        <p>你的知识库从这里开始</p>
+    </div>
 
+    <div class="card">
+        <h3>🚀 使用说明</h3>
+        <p>左侧点击进入不同分类</p>
+    </div>
 </div>
 
 </body>
