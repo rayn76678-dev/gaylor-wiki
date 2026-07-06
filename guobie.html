@@ -1,2 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Gaylor Wiki</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* 左侧栏 */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #111827;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: #60a5fa;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #1f2937;
+}
+
+/* 主内容 */
+.main {
+    margin-left: 280px;
+    padding: 40px;
+    width: 100%;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 左侧栏（所有页面都一样） -->
+<div class="sidebar">
+    <h2>gaylor</h2>
+    <a href="index.html">主页</a>
+    <a href="tongshi.html">通史</a>
+    <a href="biannian.html">编年史</a>
+    <a href="guobie.html">国别史</a>
+    <a href="jizhuan.html">纪传</a>
+    <a href="yuezhi.html">乐志</a>
+    <a href="yeshi.html">野史</a>
+</div>
+
+<!-- 主内容（每个页面只改这里） -->
+<div class="main">
+
 <h1>国别史</h1>
 <p>true love</p>
